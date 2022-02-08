@@ -1,8 +1,5 @@
 import java.util.Scanner;
 
-import javax.lang.model.util.ElementScanner14;
-
-import java.io.File;
 
 public class Game
 {
@@ -16,6 +13,16 @@ public class Game
         
         player1 = new Player();
         player2 = new Player();
+        double playerSelect = Math.random() * (2 - 1) + 1;
+        int playerSelecter = (int) playerSelect;
+    if (playerSelecter == 1)
+        {
+        System.out.println(Player.name() + " you are going first");
+        }
+    else 
+        {
+            System.out.println(player2 + " you are going first");
+        }
    }
    
     public void play()
