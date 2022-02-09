@@ -17,6 +17,7 @@ public class Player {
       Scanner sc = new Scanner(System.in);
       name = sc.nextLine();
       System.out.println("Welcome, " + name);
+      score = 0;
       }
 
      // accessor
