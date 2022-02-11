@@ -41,7 +41,7 @@ public class Game
       
      // System.out.println("Number of Game Pieces: " + pieces);
       int halfPieces = pieces / 2;
-      while (halfPieces => 1) 
+      while (halfPieces >= 1) 
       {
      System.out.println("There are " + pieces + " pieces left");
       System.out.println("How many pieces would you like to take from 1 to " + halfPieces);
@@ -50,8 +50,10 @@ public class Game
      pieces = pieces - removedPieces;
      halfPieces = pieces / 2;
       }
-     System.out.println("Congrats! " + currentPlayer() + ", you won!");
+     System.out.println("Congrats! " + player1.getName() + ", you won!");
       
+    
+
       
       
       
