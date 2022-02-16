@@ -13,7 +13,10 @@ public class Board {
    //accessors
      public static int getNumPieces()
      {
-      Math.random()
+    double doublePieces =  Math.random() * (50 - 10) + 10;
+    int getNumPieces = (int) doublePieces;
+      return getNumPieces;
+      
      }
     public static void removePieces(int numRemoved)
     {
